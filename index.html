@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadPriviousData()">
+    <h3 align="center"> Local Grocery Store </h3>
+    <div class="bcd">
+        <div>
+            <h3> Rice </h3>
+            <button onclick="decrement('rice')"> - </button>
+            <span id="rice">0</span>
+            <button onclick="increment('rice')"> + </button>
+        </div>
+        <div>
+            <h3> oil </h3>
+            <button onclick="decrement('oil')"> - </button>
+            <span id="oil">0</span>
+            <button onclick="increment('oil')"> + </button>
+        </div>
+        <div>
+            <h3> sugar </h3>
+            <button onclick="decrement('sugar')"> - </button>
+            <span id="sugar">0</span>
+            <button onclick="increment('sugar')"> + </button>
+        </div>
+        <div>
+            <h3> Onion </h3>
+            <button onclick="decrement('onion')"> - </button>
+            <span id="onion">0</span>
+            <button onclick="increment('onion')"> + </button>
+        </div>
+    </div>
+    <div class='abc'>
+        <button onclick="saveToLocal()">Save Cart Data </button>
+        <button onclick="getLocalCartData()">Show Privious session Card Data</button>
+        <button onclick="resetCart()"> Reset Cart Data</button>
+    </div>
+    
+    <div id="doc">
+        <h3> About <span style="font-size:1.5rem; font-weight:800;"onclick="closeDoc()"> × </span></h3>
+        This page store your preferences.
+        select any amount for the grocery you want. Than click save Button. 
+        This will save the data.
+        <br><br>
+        Generally, The chooises that you made are completely disappear as the browser window are closed or refreshed.
+        No Data is found back when user come back to the page again in the next time.
+        <br><br>
+        But here, no data is losed. 
+        All the data will be set to provious state that you have set in the privioua session. 
+        So, No matter you close or reload the page, the data will remain same as before. 
+        <br><br>
+        When you click on the reset button, all the data will be erased. It means when you will visit 
+        the page next time you will find every value 0.
+        <br><br>
+        Now set some amount and click sace again to store cart data again.
+        Here i'm using a save button to save data. But It could be done on window close or exit. 
+        By the way, This button is for clear visualization. 
+        <br><br>
+        Thanks for reading.
+        Hope this is the thing you were talking about..
+     </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
