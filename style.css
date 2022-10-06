@@ -1,6 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
 *{
     box-sizing: border-box;
+    font-family: roboto, 'Balsamiq Sans';
 }
 body{
     max-width: 510px;
@@ -48,7 +49,7 @@ button,span{
     text-align: left;
     font-size: 1.4rem;
     font-weight: 400;
-    font-family: monospace;
+    font-family:  ;
 }
 #doc h3{
     display:flex;
